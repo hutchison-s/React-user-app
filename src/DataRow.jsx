@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export default function DataRow({user, update}) {
     const [isEditing, setIsEditing] = useState(false);
-    const baseURL = "https://merning-desire.herokuapp.com//users";
+    const baseURL = "https://merning-desire.herokuapp.com/users";
 
     function handleUpdate(e, id) {
         const newId = e.target.parentNode.parentNode.querySelector(".rowId")
